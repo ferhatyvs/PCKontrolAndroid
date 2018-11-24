@@ -11,7 +11,8 @@ namespace PCKontrolAndroid
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Kontrol();
+            
         }
 
         protected override void OnStart()
