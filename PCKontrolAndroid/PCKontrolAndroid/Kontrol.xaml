@@ -2,22 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCKontrolAndroid.Kontrol">
-    <AbsoluteLayout BackgroundColor="Orange" >
-        <BoxView Color="White" AbsoluteLayout.LayoutBounds="0.3,0.05,1,0.58" AbsoluteLayout.LayoutFlags="All"/>
-        <BoxView Color="Gray" AbsoluteLayout.LayoutBounds="0.33,0.08,0.99,0.55" AbsoluteLayout.LayoutFlags="All"/>
+    <AbsoluteLayout x:Name="al0" BackgroundColor="White" >
+        <BoxView x:Name="kutuCerceve" Color="White" AbsoluteLayout.LayoutBounds="0.3,0.05,1,0.58" AbsoluteLayout.LayoutFlags="All"/>
+        <BoxView x:Name="kutu" BackgroundColor="Gray" AbsoluteLayout.LayoutBounds="0.33,0.08,0.99,0.55" AbsoluteLayout.LayoutFlags="All"/>
         <Grid AbsoluteLayout.LayoutBounds="0,1,1,0.39" AbsoluteLayout.LayoutFlags="All">
-            <Button Text="◄◄" Grid.Row="0" Grid.Column="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="►/❚❚" Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="►►" Grid.Row="0" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="■" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="V +" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="V -" Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Hız+" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Hız-" Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mute" Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Klavye" Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Gece Modu" Grid.Row="3" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Çıkış" Grid.Row="3" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b0"  BackgroundColor="Gray" Text="◄◄" Grid.Row="0" Grid.Column="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b1"  BackgroundColor="Gray" Text="►/❚❚" Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b2"  BackgroundColor="Gray" Text="►►" Grid.Row="0" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b3"  BackgroundColor="Gray" Text="■" Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b4"  BackgroundColor="Gray" Text="V +" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b5"  BackgroundColor="Gray" Text="V -" Grid.Row="1" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b6"  BackgroundColor="Gray" Text="Hız+" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b7"  BackgroundColor="Gray" Text="Hız-" Grid.Row="2" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b8"  BackgroundColor="Gray" Text="Mute" Grid.Row="2" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b9"  BackgroundColor="Gray" Text="Klavye" Grid.Row="3" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="b10" BackgroundColor="Gray" Text="Gece" Grid.Row="3" Grid.Column="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="b10_Clicked"/>
+            <Button x:Name="b11" BackgroundColor="Gray" Text="Çıkış" Grid.Row="3" Grid.Column="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
         </Grid>
     </AbsoluteLayout>
 
