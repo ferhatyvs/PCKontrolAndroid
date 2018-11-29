@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Net;
+using System.Net.Sockets;
 
 namespace PCKontrolAndroid
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Kontrol : ContentPage
 	{
-		public Kontrol ()
+       
+        TcpClient client; // Creates a TCP Client
+        NetworkStream stream;
+        public Kontrol ()
 		{
 			InitializeComponent ();
 		}
@@ -22,6 +27,7 @@ namespace PCKontrolAndroid
             
             if (b10.Text == "Gece")
             {
+                
                 al0.BackgroundColor = Xamarin.Forms.Color.Black;
                 kutuCerceve.BackgroundColor = Xamarin.Forms.Color.White;
                 kutu.BackgroundColor = Xamarin.Forms.Color.Black;
@@ -84,6 +90,62 @@ namespace PCKontrolAndroid
                 b10.Text = "Gece";
                 b10.FontSize++;
             }   
-        }       
+        }
+        
+        private void b0_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("geri");
+        }
+
+        private void b1_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("ppause");
+        }
+
+        private void b2_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("ileri");
+        }
+
+        private void b3_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("dur");
+        }
+
+
+        private void b4_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("volumeup");
+        }
+
+        private void b5_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("volumedown");
+        }
+
+        private void b6_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("hızup");
+        }
+
+        private void b7_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("hızdown");
+        }
+
+        private void b8_Clicked(object sender, EventArgs e)
+        {
+            App.Gonder("mute");
+        }
+
+        private void b9_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b11_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,5 +14,12 @@ namespace PCKontrolAndroid
             InitializeComponent();
 
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+            App.Bagla(IPadd.Text, Int32.Parse(Port.Text));
+            Navigation.PushAsync(new Kontrol());
+        }
     }
 }
