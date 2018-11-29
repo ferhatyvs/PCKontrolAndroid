@@ -13,7 +13,7 @@
         <Entry x:Name="IPadd" Placeholder="IP"
         />
         <Entry x:Name="Port" Placeholder="PORT" Keyboard="Numeric" MaxLength="4"/>
-        
+
         <Button Text="Bağlan" TextColor="Black" BackgroundColor="DarkGray" Clicked="Button_Clicked"/>
 
     </StackLayout>

@@ -19,7 +19,7 @@ namespace PCKontrolAndroid
         {
 
             App.Bagla(IPadd.Text, Int32.Parse(Port.Text));
-            Navigation.PushAsync(new Kontrol());
+            App.Current.MainPage = new Kontrol();
         }
     }
 }
