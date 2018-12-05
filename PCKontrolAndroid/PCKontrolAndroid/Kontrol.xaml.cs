@@ -11,23 +11,23 @@ using System.Net.Sockets;
 
 namespace PCKontrolAndroid
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Kontrol : ContentPage
-	{
-       
-        TcpClient client; // Creates a TCP Client
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Kontrol : ContentPage
+    {
+
+        TcpClient client;
         NetworkStream stream;
-        public Kontrol ()
-		{
-			InitializeComponent ();
-		}
+        public Kontrol()
+        {
+            InitializeComponent();
+        }
 
         private void b10_Clicked(object sender, EventArgs e)
         {
-            
+
             if (b10.Text == "Gece")
             {
-                
+
                 al0.BackgroundColor = Xamarin.Forms.Color.Black;
                 kutuCerceve.BackgroundColor = Xamarin.Forms.Color.White;
                 kutu.BackgroundColor = Xamarin.Forms.Color.Black;
@@ -89,9 +89,9 @@ namespace PCKontrolAndroid
                 b11.TextColor = Xamarin.Forms.Color.Black;
                 b10.Text = "Gece";
                 b10.FontSize++;
-            }   
+            }
         }
-        
+
         private void b0_Clicked(object sender, EventArgs e)
         {
             App.Gonder("geri");
@@ -145,7 +145,8 @@ namespace PCKontrolAndroid
 
         private void b11_Clicked(object sender, EventArgs e)
         {
-
+            App.Gonder("quit");
+            App.Current.MainPage = new MainPage();
         }
     }
 }

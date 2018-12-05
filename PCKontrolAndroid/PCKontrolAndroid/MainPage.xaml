@@ -5,7 +5,7 @@
              x:Class="PCKontrolAndroid.MainPage">
 
     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
-                 BackgroundColor="WhiteSmoke" Orientation="Vertical"> 
+                 BackgroundColor="WhiteSmoke" Orientation="Vertical">
         <!-- Place new controls here -->
         <Label Text="PC Kortrol" 
            HorizontalOptions="Center"
