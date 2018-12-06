@@ -13,9 +13,10 @@
         <Entry x:Name="IPadd" Placeholder="IP"
         />
         <Entry x:Name="Port" Placeholder="PORT" Keyboard="Numeric" MaxLength="4"/>
+        <Entry x:Name="PIN" Placeholder="PIN" Keyboard="Numeric" MaxLength="4" IsVisible="false"/>
 
-        <Button Text="Bağlan" TextColor="Black" BackgroundColor="DarkGray" Clicked="Button_Clicked"/>
-
+        <Button x:Name="Baglan" Text="Bağlan" TextColor="Black" BackgroundColor="DarkGray" Clicked="Button_Clicked"/>
+        <Button x:Name="Onay"   Text="Onayla" TextColor="Black" BackgroundColor="DarkGray" Clicked="Onay_Clicked" IsVisible="False"/>
     </StackLayout>
 
 </ContentPage>
