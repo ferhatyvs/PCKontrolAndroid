@@ -10,8 +10,8 @@ namespace PCKontrolAndroid
 {
     public partial class App : Application
     {
-        static TcpClient client;
-        static NetworkStream stream;
+        public static TcpClient client;
+        public static NetworkStream stream;
 
         
         public App()
